@@ -8,7 +8,7 @@ Multithreaded Python script to transfer Spotify playlist to Youtube. Uses Spotif
 # Usage
 1. Create an app at https://developer.spotify.com/dashboard/applications.
 2. Copy Spotify app id and secret to the -id option, Example: ```-id "<id>:<secret>"```.
-3. Copy Spotify playlist uri to the -p option. Click the dropdown, Hover over **Share**, Hold Alt, Click "Copy Spotify URI", Example: (... -> Share -> Hold Alt -> Copy Spotify URI)
+3. Copy Spotify playlist uri to the -p option. Open Spotify playlist page, Click the dropdown, Hover over **Share**, Hold Alt, Click "Copy Spotify URI", Example: (... -> Share -> Hold Alt -> Copy Spotify URI)
 4. Copy Youtube Music POST headers as specified at https://ytmusicapi.readthedocs.io/en/latest/setup.html to the -yt command line option,
    Example: ```-yt "POST /youtubei/v1/browse?key=qELvSDvkcRwsAw6X54sdf8dJpC7L-dEYcDNy0w..."```.
 
