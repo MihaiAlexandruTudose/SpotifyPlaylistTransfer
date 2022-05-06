@@ -86,8 +86,9 @@ def create_yt_playlist(ytmusic, playlist_name, yt_song_ids):
 def main():
     parser = argparse.ArgumentParser(description="Multithreaded script to recreate a Spotify playlist on Youtube",
                                     epilog='''
-                                    Example: python3 spot3_concurrent_queue.py -id "49f96038f20aa062772267b640a18d79:dd02c7c2232759874e1c205587017bed" 
-                                    -p "spotify:playlist:d06dafe4687e579fce76b3" -yt "POST /youtubei/v1/browse?key=qELvSDvkcRwsAw6X54sdf8dJpC7L-dEYcDNy0w..." -t 40 --playlist-type "songs" --disable-youtube-autocorrect''')
+                                    Example: python3 spotify2youtube.py -id "49f96038f20aa062772267b640a18d79:dd02c7c2232759874e1c205587017bed" 
+                                    -p "spotify:playlist:d06dafe4687e579fce76b3" -yt "POST /youtubei/v1/browse?key=qELvSDvkcRwsAw6X54sdf8dJpC7L-dEYcDNy0w..." -t 40 
+                                    --playlist-type "songs" --disable-youtube-autocorrect''')
     parser.add_argument("-id", "--spotify-creds", required=True, help="Spotify client ID and client secret separated by a colon")
     parser.add_argument("-p", "--playlist-uri", required=True, help="URI of Spotify playlist")
     parser.add_argument("-yt", "--youtube-auth", required=True, help="Youtube auth headers")
