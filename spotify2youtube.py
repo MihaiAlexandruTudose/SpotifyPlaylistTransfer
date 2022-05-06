@@ -120,8 +120,6 @@ def main():
             unadded_songs += f.result()[0]
             yt_song_ids += f.result()[1]
 
-        #print(f"[*] {len(yt_song_ids)}/{info.result()[1]} Song IDs retrieved...")
-
         # Add the list of song IDs to Youtube playlist
         create_yt_playlist(ytmusic, info.result()[0], yt_song_ids) 
 
